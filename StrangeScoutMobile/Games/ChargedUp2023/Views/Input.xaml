@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StrangeScoutMobile.Games.ChargedUp2023.Views.Input"
+             Title="Input">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="lable"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="Points"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+        <Label
+            x:Name="Cycles"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+        <VerticalStackLayout x:Name="GridInput" IsVisible="False">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <CheckBox Color="Yellow" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Top_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Top_Changed"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <CheckBox Color="Yellow" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Mid_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Mid_Changed"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <CheckBox Color="Yellow" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Purple" CheckedChanged="Bot_Changed"/>
+                <CheckBox Color="Yellow" CheckedChanged="Bot_Changed"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="NScoreb" Text="Not Scored" Clicked="NScored"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout x:Name="Stations" HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <Button x:Name="Singleb" Text="Single" Clicked="Singles"/>
+                <Button x:Name="Doubleb" Text="Double" Clicked="Doubles"/>
+                <Button x:Name="Centerb" Text="Center" Clicked="Centers"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        
+
+
+        <Button x:Name="Mobilityb" Text="Mobility" Clicked="Mobility"/>
+        <Button x:Name="Undob" Text="Undo" Clicked="Undo"/>
+        <Button x:Name="getScoreb" Text="Update Score" Clicked="getScore"/>
+        <Button x:Name="CycleTime" Text="CycleTime" Clicked="cyclestop"/>
+
+    </VerticalStackLayout>
+</ContentPage>

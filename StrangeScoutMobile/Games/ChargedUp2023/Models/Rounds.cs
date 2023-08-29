@@ -17,7 +17,7 @@ namespace StrangeScoutMobile.Games.ChargedUp2023.Models
         [Required]
         public string Event { get; set; }
         [Required]
-        public string Round { get; set; }
+        public int Round { get; set; }
         [Required]
         public int TeamNumber { get; set; }
 
@@ -58,11 +58,11 @@ namespace StrangeScoutMobile.Games.ChargedUp2023.Models
 
     public class RoundData
     { 
-        public RoundData(string _Event, string _Round, string _TeamNumber)
+        public RoundData(string _Event, int _Round, int _TeamNumber)
         {
             string Event = _Event;
-            string Round = _Round;
-            string TeamNumber = _TeamNumber;
+            int Round = _Round;
+            int TeamNumber = _TeamNumber;
         }
     }
 

@@ -37,6 +37,7 @@ public partial class Input : ContentPage
 		history = game.round.GetHistory();
         update();
         DB.setup();
+        var test = DB.test();
  
 	}
     //search scoring pos by name

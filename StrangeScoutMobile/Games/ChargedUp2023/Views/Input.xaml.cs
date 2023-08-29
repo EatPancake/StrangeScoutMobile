@@ -10,7 +10,8 @@ public partial class Input : ContentPage
 	private ChargedUp CU;
 	private Game game;
 
-    private ChargedUpLocalDataBase CDB;
+    //private ChargedUpLocalDataBase CDB;
+    private ChargedUpLocalDataBase DB = new ChargedUpLocalDataBase();
 
 
 	private List<ObjectLocations> objectLocations;
@@ -35,8 +36,8 @@ public partial class Input : ContentPage
         game.round.setObjectLocations(objectLocations);
 		history = game.round.GetHistory();
         update();
-        CDB.setup();
-        //CDB.testAdd();
+        DB.setup();
+ 
 	}
     //search scoring pos by name
 	public int ScorebyName(string name)

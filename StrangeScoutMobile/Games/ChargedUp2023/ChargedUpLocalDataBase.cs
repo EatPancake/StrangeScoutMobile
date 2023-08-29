@@ -11,18 +11,13 @@ namespace StrangeScoutMobile.Games.ChargedUp2023
 {
     public class ChargedUpLocalDataBase
     {
-        private static string filename = "ChargedUpData.db";
+        private static string filename = "C:\\Users\\arche\\Documents\\C#Programs\\StrangeScoutMobile\\StrangeScoutMobile\\Games\\ChargedUp2023\\ChargedUpData.db";
         SQLiteConnection conn = new SQLiteConnection(filename);
-        private RoundData test = new RoundData("week 1", "2", "1533");
 
         public void setup()
         {
+            
             conn.CreateTable<Rounds>();
-        }
-        public int testAdd()
-        {
-            int result = conn.Insert(test);
-            return result;
         }
     }
 }
